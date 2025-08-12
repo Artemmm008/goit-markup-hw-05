@@ -551,8 +551,8 @@ transform: translate(-50%, -50%) scale(1.5);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover,
-.close-btn:focus + .modal-svg {
+.close-btn:hover .modal-svg,
+.close-btn:focus .modal-svg {
 fill: #ffffff;
 }
 
@@ -657,7 +657,7 @@ justify-content: center;
 fill: transparent;
 }
 
-.checkbox-inp:checked + .label-priv > .span-priv {
+input[type="checkbox"]:checked + .span-priv {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
